@@ -1,0 +1,156 @@
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: #202124;
+  font-size: 14px;
+}
+
+header svg {
+  width: 24px;
+  height: 24px;
+}
+
+header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+main .google-logo {
+  width: 280px;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
+
+main .search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 600px;
+}
+
+main .input-group input {
+  width: 100%;
+  border-radius: 24px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 16px 100px 16px 40px;
+}
+
+main .input-group .search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 24px;
+}
+
+main .input-group__right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 24px;
+  gap: 16px;
+}
+
+main .input-group .microphone-icon,
+main .input-group .camera-icon {
+  width: 24px;
+  height: 24px;
+}
+
+main .search-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+main .search-buttons button {
+  background-color: #f8f9fa;
+  color: #3c4043;
+  border: 0;
+  padding: 12px 16px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 0 32px;
+  font-size: 14px;
+}
+
+footer p,
+footer a {
+  color: #70757a;
+}
+
+.footer-top {
+  border-bottom: 1px solid #ccc;
+  margin: 0 -32px;
+  padding: 0 32px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom__left,
+.footer-bottom__right {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-bottom__middle {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom__middle img {
+  width: 12px;
+  height: 14px;
+  margin-right: 8px;
+}
